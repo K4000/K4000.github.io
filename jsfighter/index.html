@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- The HTML 'HEAD' object loads extra data that we won't see on the page -->
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="script/index.js"></script>
+    <title>JS Fighter</title>
+</head>
+
+<!-- The HTML 'BODY' object loads the data we do see on the page -->
+<body onload="startup();">
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
+    <a href="../Project1/www/game.html">G2S3</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars">☰</i>
+    </a>
+  </div>
+    <!-- All game content is kept in a 'gameBox' container -->
+    <div id="gameBox">
+
+        <!-- The header box is static, so we can populate it now -->
+        <div id="headerBox">
+            <img class="logos" src="img/logo.png" alt="">
+            <h1>JSFighter</h1>
+            <img class="logos" src="img/logo_flipped.png" alt="">
+        </div>
+        <!-- The graphics box starts empty. It's populated with JS later -->
+        <div id="graphicsBox"></div>
+        <!-- Bars box is filled later, too -->
+        <div id="barsBox"></div>
+        <!-- Control will change depending on game state, as well -->
+        <div id="controlsBox"> </div>
+        <!-- This is where all the game text is output to, like a console -->
+        <div id="outputBox">
+          Character customization limited to Jackie Chan for now. Yes, this is a 2 player game, and yes, Red goes first.
+        </div>
+        <div>
+          <input id="P0NAME" type="text" name="" value="">
+        </div>
+        <select id="FighterClass" onchange="changeClass()">
+  <option value="Sam">Sam</option>
+  <option value="Crash">Crash</option>
+  <option value="Todd">Todd</option>
+</select>
+
+    </div>
+</body>
+
+</html>

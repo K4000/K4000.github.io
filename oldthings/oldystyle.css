@@ -1,0 +1,44 @@
+/* Menu */
+#openMenu {
+  font-size: 2em;
+  display: none;
+  z-index: 99;
+}
+#closeMenu {
+  display: none;
+}
+#menu {
+border: 2px solid #000000;
+max-width: 20.25em;
+display: flex;
+}
+.menuItem {
+  border: 2px solid #000000;
+  background-color: #6e2323;
+  color: #000000;
+  border-radius: 2px;
+  margin: 7px;
+  padding: 10px;
+  font-weight: courier;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+/*-------------------------------------------  */
+@media screen and (max-width: 500px) {
+  #closeMenu {
+    display: block;
+  }
+  #openMenu {
+    font-size: 2em;
+    display: block;
+    z-index: 99;
+  }
+  #menu {
+    display: inline;
+    position: absolute;
+    top: 0px;
+    z-index: 98;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+  }
